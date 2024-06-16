@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="header.component.scss" rel="stylesheet">
-   
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>Ecowave</title>
+    <link rel="stylesheet" href="header.component.scss">
 </head>
 <body>
-
-<!-- Header Section -->
-<header class="header-image">
-    <div class="header-content">
-        <h1>Saflık ve Lezzet <br> Her Yudumda!</h1>
-        <p>Zararlı kimyasallardan arınmış, minerallerle zenginleştirilmiş su için <br> Ecowave'i tercih edin, sağlığınızı ve damak zevkinizi koruyun.</p>
+    <div class="container">
+        <nav>
+            <div class="nav__logo">Ecowave</div>
+            <ul class="nav__links">
+                <li class="link"><a href="#">Anasayfa</a></li>
+                <li class="link"><a href="#">Hakkımızda</a></li>
+                <li class="link"><a href="#">İletişim</a></li>
+                <li class="link"><a href="#">Ürünler</a></li>
+            </ul>  
+        </nav>
+        <header class="header">
+            <div class="content">
+                <h1><span>Sağlıklı</span><br>Yaşam</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam voluptates cumque quo aspernatur, culpa voluptatibus corporis debitis dolorem iste esse enim maiores blanditiis deserunt amet laboriosam veniam, explicabo labore.
+                </p>
+                <div class="btn">Satın Al</div>
+            </div>
+            <div class="image">
+                <span class="image__bg"></span>
+                <img src="assets/img/3.svg" alt="header image">
+                <div class="image__content image__content__1"></div>
+                    <span></span>
+            </div>
+        </header>
     </div>
-</header>
-
-
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

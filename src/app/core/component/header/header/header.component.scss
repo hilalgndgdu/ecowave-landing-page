@@ -1,32 +1,100 @@
-.header-image {
-    background: url('/assets/img/h3.png') no-repeat right center;
-    background-size: cover;
-    height: 700px;
-    width: 100%; /* Resmin genişliğini belirliyoruz */
-    position: relative;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:host {
+   --primary-color:#7AB4C1;
+   --primary-color-dark:#00147C;
+   --text-dark:#111827;
+   --text-light:#6b7280;
+   --white:#ffffff;
 }
 
-.header-content {
-    position: absolute;
-    top: 50%;
-    left: 0; /* Sağ kenara yaslanacak */
-    transform: translateY(-50%);
-    text-align: left;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.header-content h1 {
-    font-family: "Times New Roman", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 4rem;
-    text-align: left;
-    padding-left: 100px; 
+.btn {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.header-content p {
+.btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+body {
+    font-family:'Roboto',sans-serif ;
+}
+
+.container {
+    max-width: 1800px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav__logo {
     font-size: 1.5rem;
-    text-align: left;
-    padding-left: 100px; 
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a {
+    text-decoration: none;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: var(--primary-color);
+}
+
+.header {
+    padding: 0 1rem;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.container h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.content h1 span {
+    font-weight: 400;
+}
+
+.content p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    line-height: 1.75rem;
 }
